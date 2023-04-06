@@ -817,13 +817,12 @@
               "https://upload.wikimedia.org/wikipedia/commons/a/a4/Map_of_USA_with_state_and_territory_names_2.png"
             ]
           },
-          },
           {
             "questionIndex": 94,
             "question": "What is the capital of the United States?*",
             "answers": ["Washington, D.C"],
             "images": [
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa9VBASTohOrLFut5ONJal6tzbyDjAUFzEdxHL6XKW7-Lv3_Gotrmv1X009w2Fq27Px9w&usqp=CAU"
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa9VBASTohOrLFut5ONJal6tzbyDjAUFzEdxHL6XKW7-Lv3_Gotrmv1X009w2Fq27Px9w&usqp=CAU"
             ]
           },
           {
@@ -835,7 +834,7 @@
               "[Also acceptable are New Jersey, near New York City, and on the Hudson (River).]"
             ],
             "images": [
-                "https://upload.wikimedia.org/wikipedia/commons/d/dd/Lady_Liberty_under_a_blue_sky_%28cropped%29.jpg"
+              "https://upload.wikimedia.org/wikipedia/commons/d/dd/Lady_Liberty_under_a_blue_sky_%28cropped%29.jpg"
             ]
           }
         ]
@@ -851,7 +850,7 @@
               "because the stripes represent the original colonies"
             ],
             "images": [
-                "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
+              "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
             ]
           },
           {
@@ -863,7 +862,7 @@
               "because there are 50 states"
             ],
             "images": [
-                "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
+              "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
             ]
           },
           {
