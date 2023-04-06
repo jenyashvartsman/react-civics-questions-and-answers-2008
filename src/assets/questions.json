@@ -146,7 +146,7 @@
             "answers": [
               "Answers will vary. [District of Columbia residents and residents of U.S. territories should answer that D.C. (or the territory where the applicant lives) has no U.S. Senators.]",
               "John Fetterman (Democratic Party) - Pennsylvania ",
-              " Bob Casey Jr. (Democratic Party) - Pennsylvania"
+              "Bob Casey Jr. (Democratic Party) - Pennsylvania"
             ],
             "images": [
               "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/John_Fetterman_official_portrait.jpg/800px-John_Fetterman_official_portrait.jpg",
@@ -508,7 +508,10 @@
           {
             "questionIndex": 62,
             "question": "Who wrote the Declaration of Independence?",
-            "answers": ["(Thomas) Jefferson"]
+            "answers": ["(Thomas) Jefferson"],
+            "images": [
+              "https://upload.wikimedia.org/wikipedia/commons/b/b1/Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29%28cropped%29.jpg"
+            ]
           },
           {
             "questionIndex": 63,
@@ -532,13 +535,16 @@
               "North Carolina",
               "South Carolina",
               "Georgia"
+            ],
+            "images": [
+              "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Thirteencolonies_politics_cropped.jpg/220px-Thirteencolonies_politics_cropped.jpg"
             ]
           },
           {
             "questionIndex": 65,
             "question": "What happened at the Constitutional Convention?",
             "answers": [
-              " The Constitution was written.",
+              "The Constitution was written.",
               "The Founding Fathers wrote the Constitution."
             ]
           },
@@ -552,7 +558,7 @@
             "question": "The Federalist Papers supported the passage of the U.S. Constitution. Name one of the writers.",
             "answers": [
               "(James) Madison",
-              " (Alexander) Hamilton",
+              "(Alexander) Hamilton",
               "(John) Jay",
               "Publius"
             ]
@@ -571,12 +577,18 @@
           {
             "questionIndex": 69,
             "question": "Who is the “Father of Our Country”?",
-            "answers": ["(George) Washington"]
+            "answers": ["(George) Washington"],
+            "images": [
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHCCYDVWLZx6EWseGlVVzQHzGyeJv81NNYLCaqGBVpKX1b_lFlGyW7cbk-A4TZBwo25uU&usqp=CAU"
+            ]
           },
           {
             "questionIndex": 70,
             "question": "Who was the first President?*",
-            "answers": ["(George) Washington"]
+            "answers": ["(George) Washington"],
+            "images": [
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHCCYDVWLZx6EWseGlVVzQHzGyeJv81NNYLCaqGBVpKX1b_lFlGyW7cbk-A4TZBwo25uU&usqp=CAU"
+            ]
           }
         ]
       },
@@ -690,6 +702,9 @@
             "answers": [
               "fought for civil rights",
               "worked for equality for all Americans"
+            ],
+            "images": [
+              "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Martin_Luther_King%2C_Jr..jpg/640px-Martin_Luther_King%2C_Jr..jpg"
             ]
           },
           {
@@ -739,17 +754,27 @@
           {
             "questionIndex": 88,
             "question": "Name one of the two longest rivers in the United States.",
-            "answers": ["Missouri (River)", "Mississippi (River)"]
+            "answers": ["Missouri (River)", "Mississippi (River)"],
+            "images": [
+              "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Missouririverecoregions.jpg/290px-Missouririverecoregions.jpg",
+              "https://upload.wikimedia.org/wikipedia/commons/8/80/Mississippi_watershed_map_1.jpg"
+            ]
           },
           {
             "questionIndex": 89,
             "question": "What ocean is on the West Coast of the United States?",
-            "answers": ["Pacific (Ocean)"]
+            "answers": ["Pacific (Ocean)"],
+            "images": [
+              "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Pacific_Ocean_-_en_IHO.png/310px-Pacific_Ocean_-_en_IHO.png"
+            ]
           },
           {
             "questionIndex": 90,
             "question": "What ocean is on the East Coast of the United States?",
-            "answers": ["Atlantic (Ocean)"]
+            "answers": ["Atlantic (Ocean)"],
+            "images": [
+              "https://upload.wikimedia.org/wikipedia/commons/f/f0/Atlantic_Ocean_-_en_IHO.png"
+            ]
           },
           {
             "questionIndex": 91,
@@ -779,17 +804,27 @@
               "Idaho",
               "Washington",
               "Alaska"
+            ],
+            "images": [
+              "https://upload.wikimedia.org/wikipedia/commons/a/a4/Map_of_USA_with_state_and_territory_names_2.png"
             ]
           },
           {
             "questionIndex": 93,
             "question": "Name one state that borders Mexico.",
-            "answers": ["California", "Arizona", "New Mexico", "Texas"]
+            "answers": ["California", "Arizona", "New Mexico", "Texas"],
+            "images": [
+              "https://upload.wikimedia.org/wikipedia/commons/a/a4/Map_of_USA_with_state_and_territory_names_2.png"
+            ]
+          },
           },
           {
             "questionIndex": 94,
             "question": "What is the capital of the United States?*",
-            "answers": ["Washington, D.C"]
+            "answers": ["Washington, D.C"],
+            "images": [
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa9VBASTohOrLFut5ONJal6tzbyDjAUFzEdxHL6XKW7-Lv3_Gotrmv1X009w2Fq27Px9w&usqp=CAU"
+            ]
           },
           {
             "questionIndex": 95,
@@ -798,6 +833,9 @@
               "New York (Harbor)",
               "Liberty Island",
               "[Also acceptable are New Jersey, near New York City, and on the Hudson (River).]"
+            ],
+            "images": [
+                "https://upload.wikimedia.org/wikipedia/commons/d/dd/Lady_Liberty_under_a_blue_sky_%28cropped%29.jpg"
             ]
           }
         ]
@@ -811,6 +849,9 @@
             "answers": [
               "because there were 13 original colonies",
               "because the stripes represent the original colonies"
+            ],
+            "images": [
+                "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
             ]
           },
           {
@@ -820,6 +861,9 @@
               "because there is one star for each state",
               "because each star represents a state",
               "because there are 50 states"
+            ],
+            "images": [
+                "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
             ]
           },
           {
