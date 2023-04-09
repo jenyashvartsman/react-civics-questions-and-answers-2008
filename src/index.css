@@ -37,13 +37,18 @@
 
 .question {
   height: calc(100vh - 56px);
-  justify-content: space-between;
 }
 
 .question__body {
   max-height: calc(100vh - 56px - 60px);
   overflow: auto;
-  padding: 0 10px;
+  width: 100%;
+}
+
+.question__body img {
+  height: 200px;
+  object-fit: scale-down;
+  margin: 10px 0;
 }
 
 .question__footer {
@@ -54,6 +59,10 @@
 
 .question__footer button {
   width: 100%;
+}
+
+.question__progress {
+  text-align: center;
 }
 
 .score {

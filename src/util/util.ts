@@ -5,30 +5,24 @@ import questionsCategories from "../assets/questions.json";
 const TOTAL_QUESTIONS = 100;
 const TEST_QUESTIONS = 10;
 
-export const getRandomUserQuestions = (): UserQuestionDto[] => {
-  // pick random question indexes
-  const questionIndexes = Array.from(
-    { length: TOTAL_QUESTIONS },
-    (_elem, index) => index + 1
-  )
-    .sort(() => Math.random() - 0.5)
-    .slice(0, TEST_QUESTIONS);
-
-  // create user questions
+// todo - need to improve this method
+export const getRandomUserQuestions = (
+  allQuestions: boolean
+): UserQuestionDto[] => {
   const userQeustions: UserQuestionDto[] = [];
   questionsCategories.forEach((category) =>
     category.subCategories.forEach((subCategory) =>
       subCategory.questions.forEach((question) => {
-        if (questionIndexes.includes(question.index)) {
-          userQeustions.push({
-            ...question,
-            subCategory: subCategory.subCategory,
-            category: category.category,
-          });
-        }
+        userQeustions.push({
+          ...question,
+          subCategory: subCategory.subCategory,
+          category: category.category,
+        });
       })
     )
   );
 
-  return userQeustions;
+  userQeustions.sort(() => Math.random() - 0.5);
+
+  return allQuestions ? userQeustions : userQeustions.slice(0, TEST_QUESTIONS);
 };
