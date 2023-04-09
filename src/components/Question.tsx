@@ -31,9 +31,8 @@ const Question = ({
 
           {/* question */}
           <Card.Body>
-            <Card.Title>
-              {question.category} - {question.subCategory}
-            </Card.Title>
+            <Card.Title>{question.category}</Card.Title>
+            <Card.Subtitle>{question.subCategory}</Card.Subtitle>
             <Card.Text>{question.question}</Card.Text>
           </Card.Body>
 
