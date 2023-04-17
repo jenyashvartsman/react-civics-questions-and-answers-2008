@@ -50,9 +50,8 @@
 }
 
 .question__body img {
-  height: 200px;
-  object-fit: scale-down;
-  margin: 10px 0;
+  width: 95%;
+  margin: 10px auto;
 }
 
 .question__footer {

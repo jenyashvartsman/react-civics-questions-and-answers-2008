@@ -9,7 +9,7 @@ import Score from "./components/Score";
 function App() {
   const [allQuestions, setAllQuestions] = useState<boolean>(false);
   const [questions, setQuestions] = useState<UserQuestionDto[]>([]);
-  const [questionIndex, setQuestionIndex] = useState(0);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
 
   useEffect(() => {
     restartTest();
@@ -18,15 +18,15 @@ function App() {
   const restartTest = (): void => {
     const questions = getRandomUserQuestions(allQuestions);
     setQuestions(questions);
-    setQuestionIndex(0);
+    setCurrentQuestionIndex(0);
   };
 
   const userAnswer = (answer: boolean): void => {
     setQuestions((prevQuestions) => {
-      prevQuestions[questionIndex].answerCorrectly = answer;
+      prevQuestions[currentQuestionIndex].answerCorrectly = answer;
       return [...prevQuestions];
     });
-    setQuestionIndex((prevIndex) => (prevIndex += 1));
+    setCurrentQuestionIndex((prevIndex) => (prevIndex += 1));
   };
 
   const toggleTestQuestionsCount = (): void => {
@@ -36,21 +36,25 @@ function App() {
   return (
     <>
       <Header
-        questionIndex={questionIndex}
+        questionIndex={currentQuestionIndex}
         questionsTotal={questions.length}
         restartTest={restartTest}
         toggleTestQuestionsCount={toggleTestQuestionsCount}
       />
       <Container>
-        {questionIndex < questions.length ? (
-          <>
-            <Question
-              question={questions[questionIndex]}
-              questionsTotal={questions.length}
-              questionIndex={questionIndex}
-              userAnswer={userAnswer}
-            />
-          </>
+        {currentQuestionIndex < questions.length ? (
+          questions.map(
+            (question, index) =>
+              currentQuestionIndex === index && (
+                <Question
+                  key={index}
+                  question={question}
+                  questionsTotal={questions.length}
+                  currentQuestionIndex={currentQuestionIndex}
+                  userAnswer={userAnswer}
+                />
+              )
+          )
         ) : (
           <>
             <Score questions={questions} />

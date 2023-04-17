@@ -42,7 +42,9 @@ const Score = ({ questions }: ScoreProps) => {
             key={question.index}
             variant={question.answerCorrectly ? "success" : "danger"}
           >
-            <Alert.Heading>{question.question}</Alert.Heading>
+            <Alert.Heading>
+              {question.index}. {question.question}
+            </Alert.Heading>
             <hr />
             {question.answers.map((answer) => (
               <p key={answer}>{answer}</p>

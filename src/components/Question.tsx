@@ -1,25 +1,21 @@
 import { Button, Col, Row, Card, ListGroup } from "react-bootstrap";
 import { UserQuestionDto } from "../dto/user-question.dto";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 interface QuestionProps {
   question: UserQuestionDto;
   questionsTotal: number;
-  questionIndex: number;
+  currentQuestionIndex: number;
   userAnswer: (answer: boolean) => void;
 }
 
 const Question = ({
   question,
   questionsTotal,
-  questionIndex,
+  currentQuestionIndex: questionIndex,
   userAnswer,
 }: QuestionProps) => {
   const [showAnswer, setShowAnswer] = useState(false);
-
-  useEffect(() => {
-    setShowAnswer(false);
-  }, [question]);
 
   return (
     <div className="question">
@@ -33,7 +29,15 @@ const Question = ({
           <Card.Body>
             <Card.Title>{question.category}</Card.Title>
             <Card.Subtitle>{question.subCategory}</Card.Subtitle>
-            <Card.Text>{question.question}</Card.Text>
+
+            <hr />
+
+            <Card.Text>
+              <h5>
+                <strong>{question.index}. </strong>
+                {question.question}
+              </h5>
+            </Card.Text>
           </Card.Body>
 
           {/* answers */}
@@ -59,12 +63,12 @@ const Question = ({
           <Row>
             <Col>
               <Button variant="danger" onClick={() => userAnswer(false)}>
-                Wrong
+                Incorrect
               </Button>
             </Col>
             <Col>
               <Button variant="success" onClick={() => userAnswer(true)}>
-                Right
+                Correct
               </Button>
             </Col>
           </Row>
